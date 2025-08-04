@@ -1,0 +1,260 @@
+
+ body {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+   background-color:hsl(342, 60%, 57%);
+   color:rgb(251, 242, 246);
+}
+
+header {
+   font-size: 30px;
+   border: solid #b12d62 5px;
+   background-image: url("fadedflora.webp");
+   text-align: center;   
+   padding: 2px;
+}
+
+main {
+   line-height: 1.6;
+}
+
+footer {
+   border: solid #b12d62 5px;
+   background-image: url("fadedflora.webp");
+   padding: 10px; 
+   text-align: center;
+}
+
+nav a {
+   text-decoration: none;
+   color: inherit;
+   display: flex;
+}
+
+.nav-1 ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   max-inline-size: 100%;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+}
+
+nav ul li {
+   padding: 10px;
+   padding-inline: 25px;
+   background-color: #fccadc29;
+   border: solid #fccadc 2px;
+   border-radius: 30px;
+}
+
+nav ul li:hover {
+   background-color: #b12d626b;
+   border: solid #fccadc 2px;
+}
+
+section {
+   margin-inline: 80px;
+   margin-block: 25px;
+}
+
+p {
+   font-size: 20px;
+   margin-block: 20px;
+}
+
+h5 {
+   color: rgb(252, 202, 220);
+}
+
+button {
+   font-size: 20px;
+   background-color:#b03264;
+   padding: 8px; 
+   border-color:rgb(251, 242, 246);
+   border-radius: 20px; 
+   cursor: pointer;
+   color:rgb(251, 242, 246);
+   margin: 10px;
+}
+
+button a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.buttonpay {
+   display: block;
+   margin: 0 auto;
+   margin-block-end: 20px;
+}
+
+.homeb {
+   padding: 10px;
+   background-color: rgb(252, 202, 220);
+   color: #b03264;
+}
+
+video {
+   border: solid hsl(336, 56%, 44%) 5px;
+   border-radius: 25px;
+   display: block;
+   margin: 0 auto;
+   margin-block: 20px;
+}
+
+a {
+   color: rgb(252, 202, 220);
+}
+
+.wrapper {
+   max-inline-size: 1000px;
+   margin-inline: auto;
+      @media (width > 400px) {
+      .wrapper {
+         max-inline-size: 10px;
+         margin-inline: auto;
+      }
+   }
+}
+
+.heading {
+   font-size: 25px; 
+   text-align: center;
+   margin-block: 40px;
+}
+
+.linkf {
+   text-decoration: none;
+   color: inherit;
+}
+
+.linkf:hover {
+   color: rgb(255, 164, 197);
+}
+
+linkf:active {
+   color: rgb(255, 164, 197);
+}
+
+.hover:hover {
+   color: rgb(255, 164, 197);
+}
+
+.hover {
+   color: inherit;
+}
+
+.Mtext {
+   color: rgb(252, 202, 220);
+   text-align: center;
+   border: dotted #b03264 5px;
+   border-radius: 30px;
+}
+
+.centrepulse {
+   margin: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.heart {
+  width: 100px;
+  height: 90px;
+  position: relative;
+  background-color:#b03264;
+  transform: rotate(-45deg);
+  animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 100px;
+  height: 90px;
+  background-color:#b03264;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+
+@media (max-width: 470px) {
+   body {
+      font-size: 16px;
+   }
+   header, footer {
+      font-size: 20px;
+      background-position: cover;
+   }
+   nav ul li {
+      padding: 5px;
+      padding-inline: 15px;
+   }
+   section {
+      margin-inline: 20px;
+   }
+   button {
+      font-size: 16px;
+      padding: 5px;
+   }
+   h1{
+      font-size: 29px;
+   }
+   h2 {
+      font-size: 28px;
+      line-height: normal;
+   }
+   .topic {
+      font-size: 35px;
+   }
+   p {
+      font-size: 15px;
+   }
+   .nav-1 ul {
+      gap: 15px;
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 408px) {
+   h2 {
+      font-size: 25px;
+   }
+   .nav-1 ul {
+      gap: 10px;
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 372px) {
+   h2 {
+      font-size: 22px;
+   }
+}
+
+a:visited {
+   text-decoration: none;
+}
